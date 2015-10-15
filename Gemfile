@@ -18,6 +18,7 @@ gem "haml-rails"
 gem 'decent_exposure'
 gem 'simple_form'
 gem "gretel"
+gem 'high_voltage'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
