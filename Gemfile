@@ -20,6 +20,7 @@ gem 'simple_form'
 gem "gretel"
 gem 'html2haml'
 gem 'validates_timeliness'
+gem 'roo'
 gem 'high_voltage'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
