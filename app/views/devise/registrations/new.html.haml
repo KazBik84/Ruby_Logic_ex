@@ -4,11 +4,12 @@
   .form-inputs
     = f.input :email, required: true, autofocus: true
     = f.input :username, required: true
-    = f.input :f_name , label: "Imię", required: true
+    = f.input :f_name, required: true , label: "Imię"
     = f.input :l_name , label: "Nazwisko", required: true    
     = f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length)
     = f.input :password_confirmation, required: true
-    = f.input :validity_date, label: "Data ważności konta", as: :date, start: Date.today, required: true
+    = f.input :validity_date, label: "Data ważności konta", as: :date, required: true
   .form-actions
     = f.button :submit, "Sign up"
+
 = render "devise/shared/links"

@@ -19,6 +19,7 @@ gem 'decent_exposure'
 gem 'simple_form'
 gem "gretel"
 gem 'html2haml'
+gem 'validates_timeliness'
 gem 'high_voltage'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
