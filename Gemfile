@@ -21,6 +21,7 @@ gem "gretel"
 gem 'html2haml'
 gem 'validates_timeliness'
 gem 'roo'
+gem 'roo-xls'
 gem 'high_voltage'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
