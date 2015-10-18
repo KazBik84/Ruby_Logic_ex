@@ -12,8 +12,8 @@ class User < ActiveRecord::Base
 validates :username, :f_name, :l_name, :validity_date, presence: true
 # email proper format and uniquness is validated by devise
 validates :email, format: { with: /[a-z]+/ }
-validates :username, format: { with: /\b[a-z]+\b/ }, length: { is: 8 }, uniqueness: true
-validates :f_name, :l_name, format: { with: /\A([A-Z][a-z]*)+( [A-Z][a-z]*)*\z/ }
+validates :username, format: { with: /\b\p{Ll}+\b/ }, length: { is: 8 }, uniqueness: true
+validates_format_of :f_name, :l_name, with: /(\p{Lu}\p{Ll}+)/ 
 validates_date :validity_date, after: Date.today
 
 
