@@ -1,0 +1,11 @@
+- #App navbar
+%nav.navbar.navbar-inverse
+  %ul.nav.navbar-nav.navbar-right
+    - if user_signed_in?
+      %li
+        = link_to t('navbar.logout'), destroy_user_session_path, method: :delete
+    - else
+      %li
+        = link_to t('navbar.signin'), new_user_session_path
+      %li
+        = link_to t('navbar.signup'), new_user_registration_path  
